@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static', filename='styles.css') }}">
+    {% if currentUserEmail %}
+        <button><a id="logoutLink" href='{{url_for('gdisconnect') }}'>Logout</a></button>
+    {% else %}
+        <button><a id="loginLink" href='{{url_for('showLogin') }}'>Login</a></button>
+    {% endif %}
+    </br>
+</head>
+<body>
+
+<h1>Select a genre to explore!</h1>
+
+</br>
+</br>
+
+{% for i in genres %}
+
+<div>
+
+<a href='{{url_for('exploreGenre', genre_id = i.id) }}'>{{i.name}}</a>
+
+</div>
+
+</br>
+
+
+{% endfor %}
+</body>
+
+</html>

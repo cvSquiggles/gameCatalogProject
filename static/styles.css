@@ -1,0 +1,29 @@
+body    { font-family: sans-serif; background-color: #333333 }
+h1,h2,h3,h4 { color: #CCCCCC; }
+h1, h2  { font-family: 'Georgia', serif; }
+h1  { border-bottom: 2px solid #eee; padding-bottom: .25em; margin-bottom: .25em;}
+h2  { color: #CCCCCC; margin: 0px;}
+
+p   { color: #CCCCCC; }
+
+a   {text-decoration: none; color:#FFFFFF; font-size:  .75em;}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+#loginLink {text-decoration: none; color:#000000; font-size:  .75em;}
+#logoutLink {text-decoration: none; color:#000000; font-size:  .75em;}
+
+.pane {position: absolute; left: 25%; border: 2px solid; border-radius: : 25px; padding: 5px; margin: 5px; border-color: #999999;}
+
+.header {left:50%; text-align: center;}
+.name p {width:50%;display: inline-block; float:left; color: #FFFFCC;}
+.description p {color:#CCCCCC;}
+.price p {text-align: right; width:50%; float: right; color: #FFFFCC;}
+
+.flash {background: #cee5f5;}

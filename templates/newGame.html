@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<h1>New Game Info</h1>
+
+<div>
+    <form action="{{ url_for('newGame',genre_id = genre_id)}}" method = "post">
+        <div class="form-group">
+
+            <label for="name" required>Game name:</label>
+            <input type="text" class="form-control" maxlength="100" name="name">
+
+            </br>
+
+            <label for="esrb" required>Rating:</label>
+            <input type="text" class="form-control" maxlength="100" name="esrb">
+
+            </br>
+
+            <label for="releaseYear" required>Release Year:</label>
+            <input type="text" class="form-control" maxlength="100" name="releaseYear">
+
+            </br>
+
+            <label for="platforms" required>Platforms:</label>
+            <input type="text" class="form-control" maxlength="100" name="platforms">
+
+            </br>
+            </br>
+
+            <label for="desc" required>Description:</label>
+            <input type="text" class="form-control" maxlength="100" name="desc">
+
+            </br>
+            </br>
+            <button type="submit" class="btn btn-default" id="submit" type="submit">Create Game!</button>
+
+        </div>
+    </form>
+    </br>
+    <a href='{{url_for('exploreGenre', genre_id = genre_id) }}'>Cancel game creation.</a>
+</div>
+
+</body>
+
+</html>
